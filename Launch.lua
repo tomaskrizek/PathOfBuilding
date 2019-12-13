@@ -53,7 +53,8 @@ function launch:OnInit()
 		-- Enable dev mode to disable updates and set user path to be the script path
 		self.devMode = true
 	end
-	RenderInit()
+	-- https://github.com/Openarl/PathOfBuilding/issues/28#issuecomment-353526752
+	--RenderInit()
 	ConPrintf("Loading main script...")
 	local errMsg
 	errMsg, self.main = PLoadModule("Modules/Main")
